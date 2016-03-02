@@ -1,0 +1,324 @@
+.profWrapper {
+    position: fixed;
+    background: url("../img/quest_bg2.jpg") center center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    .profWrap {
+        position: relative;
+        width: 90%;
+        height: 80%;
+        background: rgba(0,0,0,0.5);
+        margin: 70px 5% 0 5%;
+        border: thin solid $yellow;
+
+        .profDataWrap {
+            position: fixed;
+            width: 15%;
+            border-right: thin solid white;
+            height: 76%;
+            margin: 1%;
+
+            .dataProfTop {
+            	h1 {
+            	    color: white;
+            	    margin: 0 0 20px 0;
+            	    font-size: 1.5rem;
+            	}
+            }
+            .dataProfAvatar {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 130px;
+                height: 130px;
+                margin: auto;
+
+                img {
+                	width: 100%;
+                	height:auto;
+                }
+            }
+            .dataProfInfo {
+            	p  {
+            		color:white;
+            		text-align:center;
+
+            		&.name {
+            			margin: 10px 0 0 0;
+            			font-weight: bold;
+            			font-size: 20px;
+            		}
+            		&.age {
+            			margin: 10px 0 0 0;
+            			font-weight: normal;
+            			font-size: 15px;
+            		}
+            	}
+            }
+            hr {
+            	width: 90%;
+            	margin: 20px 0;
+            }
+
+            .dataProfMenu {
+            	a {
+            		width: 70%;
+            		display: block;
+            		margin: 10px 0;
+            		//text-align: center;
+            		padding: 8px 5px 8px 30px;
+            		border: none;
+
+            		&:before {
+            			content: "";
+            			width: 20px;
+            			height: 20px;
+            			position: absolute;
+            			margin: 0px 0 0 -23px;
+
+            			background: url(../img/ico_mod.png);
+            			background-size: cover;
+            		}
+            	}
+            }
+        }
+        .profInfoWrap {
+        	position: fixed;
+            width: 72%;
+            //border: thin solid red;
+            height: 76%;
+            margin: 1% 1% 1% 17%;
+            //padding:1%;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            .dashProf {
+            	border: thin solid rgba(255,255,255,0.25);
+            	padding: 10px;
+            	margin: 0 0 20px 0;
+            	background: rgba(0,0,0,0.5);
+
+            	h1.dashTittle {
+            		border-bottom:thin solid rgba(255,255,255,0.25);
+            		padding: 0 0 5px 0;
+            		color: white;
+            	}
+
+            	&.dashProfForm {
+            		color: white;
+            		text-align: center;
+            		padding: 15px;
+            		a {
+            			color: white;
+            		}
+            	}
+            	&.dashProfNullInfo {
+            		a {
+            			color: white;
+            			text-align: center;
+            			font-size: 0.9rem;
+            			line-height: 1.3;
+            			display: block;
+            			text-decoration: none;
+            		}
+            	}
+            	&.dashProfInfo {
+            		hr {
+            			margin: 20px;
+            			border: none;
+            			border-top: thin solid $yellow;
+            		}
+
+            		.dashProfInfoItem {
+            			color: white;
+            			font-size: 0.9rem;
+            			margin: 0px 0px 15px 20px;
+            			line-height: 1.3;
+
+            			span {
+            				&:before {
+            					content: "";
+            					width: 15px;
+            					height: 15px;
+            					position: absolute;
+            					margin: 2px 0 0 -22px;
+
+            					background: url(../img/ico_mod.png);
+            					background-size: cover;
+            				}
+
+            				i {
+            					color: $yellow;
+            				}
+            			}
+            		}
+            	}
+            	&.dashProfEvents {
+            		.dashProfEventsItem {
+            			border-bottom:thin solid rgba(255,255,255,0.25);
+            			margin: 10px 0;
+
+            			&.dashProfEventsItemLg {
+            				margin: 30px 0;
+            			}
+
+            			.profEventsItemImg {
+            				width: 20%;
+            				//height: 100px;
+            				float: left;
+
+            				&.profEventsItemImgLg {
+            					width: 12%;
+            				}
+
+            				img {
+            					width: 100%;
+            					height: auto;
+            				}
+            			}
+            			.profEventsItemData {
+            				color:white;
+            				font-size: 0.9rem;
+            				float: left;
+            				width: 80%;
+
+            				&.profEventsItemDataLg {
+            					width: 88%;
+            				}
+
+            				h1 {
+            					font-size: 1.2rem;
+            					border-bottom: thin solid white;
+            					padding: 0 0 5px 0;
+            					margin: 0 0 5px 0;
+            				}
+            				.fechaEvent {
+            					margin: 0 0 5px 0;
+            					b {
+            						color: $yellow;
+            					}
+            				}
+            				.lugarEvent {
+            					margin: 0 0 10px 0;
+            					b {
+            						color: $yellow;
+            					}
+            				}
+            				.descrEvent {
+            					margin: 0 0 15px 0;
+            					b {
+            						font-weight: bold;
+            					}
+            				}
+            				.moreEventInfo {
+            					color: white;
+            					text-align: center;
+            					display: block;
+            					text-decoration: none;
+            					margin: 0 0 20px 0;
+            					span {
+            						&:before {
+            							content: "";
+            							width: 22px;
+            							height: 17px;
+            							position: absolute;
+            							margin: 0px 0 0 -30px;
+
+            							background: url(../img/down.png);
+            							background-size: cover;
+            						}
+            					}
+            				}
+            				.recEvent {
+            					b {
+            						font-weight: bold;
+            					}
+            					ul {
+            						margin: 10px 0 0 20px;
+
+            						li {
+            							margin: 0px 0 10px 20px;
+            							list-style: circle;
+            						}
+            					}
+            				}
+            				.profEventsItemDataHide {
+            					margin: 20px 0 0 0;
+            					display: none;
+
+            					.minusEventInfo {
+            						color: white;
+        						    text-align: center;
+        						    display: block;
+        						    text-decoration: underline;
+        						    margin: 20px auto 10px auto;
+        						    clear: both;
+        						    width: 186px;
+        						    height: 17px;
+
+            						span {
+            							display: block;
+            							float: left;
+
+            							&:first-child {
+            								font-size: 2.5rem;
+            								line-height: 0;
+            								padding: 5px 7px 0 0;
+            							}
+            						}
+            					}
+            				}
+            			}
+            		}
+            	}
+            	&.dashProfImgs {
+            		.dashProfImgsItem {
+            			margin: 15px 0 0 0;
+
+            			.dashProfImgsItemSide {
+            				width: 33%;
+            				float: left;
+            				height: 280px;
+            				overflow: hidden;
+
+            				.dashImgWrap {
+            					width: 100%;
+            					height: 280px;
+            					background-size: cover;
+            					background-repeat: no-repeat;
+            				}
+            			}
+            			.dashProfImgsItemMid {
+            				width: 33%;
+            				float: left;
+            				height: 280px;
+            				overflow: hidden;
+
+            				.dashImgWrap {
+            					width: 100%;
+            					height: 280px;
+            					background-size: cover;
+            					background-repeat: no-repeat;
+            				}
+            			}
+            			.dashProfImgsItemMid {
+            				width: 33%;
+            				float: left;
+
+            				.dashImgWrap {
+            					width: 50%;
+            					height: 140px;
+            					background-size: cover;
+            					background-repeat: no-repeat;
+            					float: left;
+            					-webkit-box-shadow: 5px 5px 5px black;
+            					box-shadow: 5px 5px 5px black;
+            				}
+            			}
+            		}
+            	}
+            }
+        }
+    }
+}

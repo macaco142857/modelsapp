@@ -1,0 +1,281 @@
+/* * * */
+
+@import 'reset';
+
+@import 'variables';
+
+/* * * */
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: 'Helvetica Neue LT Std th';
+    background: $dark-gray;
+}
+
+a.btn, input[type="submit"].btn {
+    background: rgba(0,0,0,0.25);
+    padding: 8px 20px;
+    border: thin solid white;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.clear {clear:both}
+
+/* * Loader * */
+    .LoaderWrap {
+        position: fixed;
+        z-index: 9000;
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+
+        .LoaderSubWrap {
+            background: transparent;
+            border: thin solid $yellow;
+            position: fixed;
+            width: 96%;
+            height: 96%;
+            margin: 1% 2%;
+
+            .loaderBgWrap {
+                width: 100px;
+                height: 122px;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                margin: -61px 0 0 -50px;
+
+                /*@keyframes playLoader {
+                   100% { background-position: -3136px 0px; }
+                }
+                .loaderBg {
+                    background-image: url("../img/sprite_loader2.png");
+                    background-position: 0 0;
+                    background-repeat: no-repeat;
+                    width: 98px;
+                    height: 98px;
+                    background-size: cover;
+
+                    -webkit-animation: playLoader .8s steps(32) infinite;
+                    -moz-animation: playLoader .8s steps(32) infinite;
+                    animation: playLoader .8s steps(32) infinite;
+                }*/
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    margin: 10px 0 0 0;
+                }
+
+            }
+        }
+    }
+/* * * */
+
+@import 'landingPage';
+
+@import 'initVideo';
+
+@import 'mainMenu';
+
+@import 'firstForm';
+
+@import 'home';
+
+@import 'profile';
+
+/* * * * GENERAL * * * */
+
+.logohome {
+    z-index: 15;
+    width: 280px;
+    height: 60px;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    margin: 0 0 0 -140px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+button#showMenu {
+    background: rgba(0,0,0,0);
+    color: white;
+    width: 47px;
+    height: 45px;
+    position: fixed;
+    font-size: 0;
+    margin: 10px;
+    border: none;
+    z-index: 15;
+
+
+    span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background: #EFB53C;
+
+        &:before {
+            content: "";
+            width: 35px;
+            height: 5px;
+            position: absolute;
+            display: block;
+            margin: 10px 0 0 0;
+            background: #EFB53C;
+        }
+        &:after {
+            content: "";
+            width: 35px;
+            height: 5px;
+            position: absolute;
+            display: block;
+            margin: -10px 0 0 0;
+            background: #EFB53C;
+        }
+    }
+}
+.homeReg {
+    position: fixed;
+    z-index: 15;
+    right: 0;
+    margin: 15px;
+    margin: 25px 15px 0 0;
+
+    p {
+        color:white;
+
+        a {
+            color:white;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}
+.homeFoot {
+    background: $dark-gray;
+    position: fixed;
+    z-index: 15;
+    width: 96%;
+    display: block;
+    bottom: 0px;
+    padding: 1% 2%;
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    p {
+        color:white;
+
+        &:first-child {
+            float: left;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            float: right;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* columns */
+    .dashCol12 {
+        width: 98%;
+        margin: 0 1% 0 1%;
+        float: left;
+    }
+    .dashCol10 {
+        width: 81.3%;
+        float: left;
+        margin: 0 1% 0 1%;
+    }
+    .dashCol8 {
+        width: 64.6%;
+        float: left;
+        margin: 0 1% 0 1%;
+    }
+    .dashCol6 {
+        width: 48%;
+        float: left;
+        margin: 0 1% 0 1%;
+    }
+    .dashCol4 {
+        width: 31.3%;
+        float: left;
+        margin: 0 1% 0 1%;
+    }
+    .dashCol2 {
+        width: 14.65%;
+        float: left;
+        margin: 0 1% 0 1%;
+    }
+/* * * * MODALS * * * */
+
+.modalBg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1500;
+    display:none;
+
+    &.initSesion {
+        color:white;
+        text-align: center;
+
+        .modalCont {
+            width: 300px;
+            height: 300px;
+            border: 2px solid $yellow;
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            margin: -160px 0 0 -160px;
+            padding: 20px;
+
+            h2 {
+                font-size: 1.75rem;
+                color: $yellow;
+            }
+            p {
+                margin: 20px 0 25px 0;
+            }
+            label {
+                display: block;
+                margin: 20px 0 5px 0;
+            }
+            input[type="text"], input[type="password"] {
+                width: 80%;
+                background: rgba(255,255,255,0.1);
+                border: none;
+                border-bottom: 2px solid $yellow;
+                padding: 5px;
+                text-align: center;
+                outline: none;
+            }
+            input.btn {
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+}
